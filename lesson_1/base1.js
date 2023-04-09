@@ -4,10 +4,6 @@ class BitAccessor {
   }
 
   validate(elementIndex, bitIndex) {
-    if (!this.byteArray.length) {
-      throw new Error('An array shouldn\'t be empty');
-    }
-
     if (elementIndex > this.byteArray.length - 1) {
       throw new Error('Index of an element is out of boundaries');
     }
